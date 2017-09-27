@@ -376,8 +376,8 @@ trait Billable
         if ($defaultCard) {
             $this->fillCardDetails($defaultCard)->save();
         } else {
-            $this->cardBrand = null;
-            $this->cardLastFour = null;
+            $this->card_brand = null;
+            $this->card_last_four = null;
             $this->update(false);
         }
 
@@ -394,8 +394,8 @@ trait Billable
     protected function fillCardDetails($card)
     {
         if ($card) {
-            $this->cardBrand = $card->brand;
-            $this->cardLastFour = $card->last4;
+            $this->card_brand = $card->brand;
+            $this->card_last_four = $card->last4;
         }
 
         return $this;

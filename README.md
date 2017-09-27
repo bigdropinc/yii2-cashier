@@ -8,8 +8,6 @@
 
 This extension is the port of [Laravel's Cashier package](https://laravel.com/docs/5.4/billing)
 
-[![Latest Stable Version](https://poser.pugx.org/bigdropinc/yii2-cashier/v/stable)](https://packagist.org/packages/bigdropinc/yii2-cashier) [![Total Downloads](https://poser.pugx.org/bigdropinc/yii2-cashier/downloads)](https://packagist.org/packages/bigdropinc/yii2-cashier) [![License](https://poser.pugx.org/bigdropinc/yii2-cashier/license)](https://packagist.org/packages/bigdropinc/yii2-cashier)
-
 Installation
 ------------
 
@@ -59,8 +57,8 @@ $this->createTable('subscription', [
 ], $tableOptions);
 
 $this->addColumn('user', 'stripe_id', $this->string());
-$this->addColumn('user', 'cardBrand', $this->string());
-$this->addColumn('user', 'cardLastFour', $this->string());
+$this->addColumn('user', 'card_brand', $this->string());
+$this->addColumn('user', 'card_last_four', $this->string());
 $this->addColumn('user', 'trial_end_at', $this->timestamp()->null());
 ```
 > Also you can apply migration by the following command:
