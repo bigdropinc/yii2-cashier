@@ -104,7 +104,7 @@ class TestCase extends \PHPUnit\Framework\TestCase
             'email' => 'string',
             'stripe_id' => 'string',
             'card_brand' => 'string',
-            'cardLastFour' => 'string',
+            'card_last_four' => 'string',
             'trial_end_at' => 'timestamp null default null',
         ])->execute();
 

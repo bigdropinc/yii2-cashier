@@ -59,8 +59,8 @@ $this->createTable('subscription', [
 ], $tableOptions);
 
 $this->addColumn('user', 'stripe_id', $this->string());
-$this->addColumn('user', 'cardBrand', $this->string());
-$this->addColumn('user', 'cardLastFour', $this->string());
+$this->addColumn('user', 'card_brand', $this->string());
+$this->addColumn('user', 'card_last_four', $this->string());
 $this->addColumn('user', 'trial_end_at', $this->timestamp()->null());
 ```
 > Also you can apply migration by the following command:
